@@ -11,7 +11,7 @@ if(localStorage.getItem("input") != undefined){
 let isSure = false;
 
 save.addEventListener("click", ()=>{
-  if(localStorage.getItem("input") == text.innerHTML && input.value){
+  if(input.value == text.innerHTML && input.value){
     return;
   }
   if(isSure == false){
