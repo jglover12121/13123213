@@ -11,7 +11,7 @@ if(localStorage.getItem("input") != undefined){
 let isSure = false;
 
 save.addEventListener("click", ()=>{
-  if(input.value == text.innerHTML && input.value){
+  if(localStorage.getItem("input") == text.innerHTML && input.value){
     return;
   }
   if(isSure == false){
@@ -26,7 +26,7 @@ save.addEventListener("click", ()=>{
     console.log(err)
   } finally{
     text.innerHTML = localStorage.getItem("input");
-    console.log("successfully seved and changed text's html!")
+    console.log("successfully seved and ")
   }
 })
 
