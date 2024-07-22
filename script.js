@@ -26,6 +26,7 @@ save.addEventListener("click", ()=>{
     console.log(err)
   } finally{
     text.innerHTML = localStorage.getItem("input");
+    console.log("successfully seved and changed text's html!")
   }
 })
 
